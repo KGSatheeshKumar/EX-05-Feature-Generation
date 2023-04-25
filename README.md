@@ -1,12 +1,13 @@
 # EX-05-Feature-Generation
+
 ## AIM
 To read the given data and perform Feature Generation process and save the data to a file. 
 
-## Explanation
+# Explanation
 Feature Generation (also known as feature construction, feature extraction or feature engineering) is the process of transforming features into new features that better relate to the target.
  
 
-## ALGORITHM
+# ALGORITHM
 ### STEP 1
 Read the given Data
 ### STEP 2
@@ -16,9 +17,9 @@ Apply Feature Generation techniques to all the feature of the data set
 ### STEP 4
 Save the data to the file
 
-## CODE
-```
-### Data.csv:
+
+# CODE
+## Data.csv :
 ```
 import pandas as pd
 df=pd.read_csv("data.csv")
@@ -76,22 +77,7 @@ sc3=RobustScaler()
 df5=pd.DataFrame(sc3.fit_transform(df1),columns=['id', 'bin_1', 'bin_2', 'City', 'Ord_1','Ord_2','Target'])
 df5
 ```
-### Data.csv output:
-![ds1](https://user-images.githubusercontent.com/93427345/195565371-5b0f62a0-9d59-443a-b18a-1aebab1d594f.png)
-
-![ds2](https://user-images.githubusercontent.com/93427345/195565421-0b68b926-5cc5-425e-919e-65867f44baf4.png)
-
-![ds3](https://user-images.githubusercontent.com/93427345/195565451-ae75ff4c-4d91-4433-8723-3b31c53a75bf.png)
-
-![ds4](https://user-images.githubusercontent.com/93427345/195565496-f356d55e-5c5d-46eb-b5d0-643dd645289b.png)
-
-![ds5](https://user-images.githubusercontent.com/93427345/195565555-827b3c2d-7358-4568-b913-009162e90104.png)
-
-![ds6](https://user-images.githubusercontent.com/93427345/195565577-66f19e9d-1772-438f-9f38-4da924153a01.png)
-
-![ds7](https://user-images.githubusercontent.com/93427345/195565612-5e5d7c66-8bc8-4e61-8d48-63dbe1fad175.png)
-
-### Encoding.csv code:
+## Encoding.csv :
 ```
 import pandas as pd
 df=pd.read_csv("Encoding Data.csv")
@@ -141,22 +127,7 @@ sc3=RobustScaler()
 df4=pd.DataFrame(sc3.fit_transform(df1),columns=['id', 'bin_1', 'bin_2', 'nom_0','ord_2'])
 df4
 ```
-### Encoding.csv Output:
-![1](https://user-images.githubusercontent.com/93427345/195566163-146b54ce-a766-4899-9de7-7932f5a59dff.png)
-
-![2](https://user-images.githubusercontent.com/93427345/195566234-2e905f05-7c18-4f12-8aad-7e9f0db8ff56.png)
-
-![3](https://user-images.githubusercontent.com/93427345/195566342-41b7d1aa-3f02-4a09-b7f5-0f8090d95307.png)
-
-![4](https://user-images.githubusercontent.com/93427345/195566391-97a65d56-1b68-4987-84da-1219ae2d7fe6.png)
-
-![5](https://user-images.githubusercontent.com/93427345/195566408-09b6f6ed-3602-4d48-a1c7-80fe700d48d3.png)
-
-![6](https://user-images.githubusercontent.com/93427345/195566431-a7ff06b8-be86-4e3d-b149-2e346e6d3414.png)
-
-![7](https://user-images.githubusercontent.com/93427345/195566454-eba9e5d5-ab32-45f4-9d7e-64e4df520512.png)
-
-### Tiatanic.csv Code:
+## Titanic.csv :
 ```
 import pandas as pd
 df=pd.read_csv("titanic_dataset.csv")
@@ -212,22 +183,66 @@ sc3=RobustScaler()
 df5=pd.DataFrame(sc3.fit_transform(df1),columns=['Passenger','Survived','Pclass','Sex','Age','SibSp','Parch','Fare','Embarked'])
 df5
 ```
-### Titanic.csv Output:
-![1a](https://user-images.githubusercontent.com/93427345/195567108-7c830b0b-8d7f-455c-9292-294b346d951c.png)
 
-![1b](https://user-images.githubusercontent.com/93427345/195567142-498ffc60-f608-4bc3-bf4a-87c23cc4612a.png)
+# OUPUT
+## Data.csv :
 
-![1c](https://user-images.githubusercontent.com/93427345/195567161-9326f2d7-037b-4c62-8056-ad66d3077cde.png)
+![image](https://user-images.githubusercontent.com/66360846/195596531-b68f0526-f0ec-4259-9a67-0f0bb8b02847.png)
 
-![1d](https://user-images.githubusercontent.com/93427345/195567187-fcd7fe38-43d3-4cb2-ae13-73b83652dde3.png)
+![image](https://user-images.githubusercontent.com/66360846/195596571-6a58411d-73bd-456e-b706-81cac98f48d9.png)
 
-![1e](https://user-images.githubusercontent.com/93427345/195567212-496db46c-f5d5-4f9e-b015-1663e51300ff.png)
+![image](https://user-images.githubusercontent.com/66360846/195596597-ba3d9fd3-796a-4c5c-932f-6257a18fe190.png)
 
-![1f](https://user-images.githubusercontent.com/93427345/195567233-5aeedabd-921a-4308-9ac1-e1a53eee0cd2.png)
+![image](https://user-images.githubusercontent.com/66360846/195596696-b2223a0e-2e04-49ce-a4c0-331f8f7aee33.png)
 
-![1g](https://user-images.githubusercontent.com/93427345/195567273-d540d2bf-7596-4393-bded-77eb264ed080.png)
+![image](https://user-images.githubusercontent.com/66360846/195596731-d044ee9d-0951-47f4-96aa-a220fd7bee52.png)
 
-![1h](https://user-images.githubusercontent.com/93427345/195567305-e868e965-3c58-4ed4-ad65-152c74608a2a.png)
+![image](https://user-images.githubusercontent.com/66360846/195596763-70246f26-3b05-471b-9be9-47e7f2c2c61b.png)
+
+![image](https://user-images.githubusercontent.com/66360846/195596792-20bb802b-255a-4a6f-9009-9c14219fd411.png)
+
+![image](https://user-images.githubusercontent.com/66360846/195596834-9cb3d404-c62b-4cbc-a01f-f8316298c73b.png)
+
+## Encoding.csv :
+
+![image](https://user-images.githubusercontent.com/66360846/195596934-3052bedc-0664-4b01-943a-77a2274efe41.png)
+
+![image](https://user-images.githubusercontent.com/66360846/195596913-8e17a687-de64-4911-b13c-126f1c20e40b.png)
+
+![image](https://user-images.githubusercontent.com/66360846/195596998-f1c64537-f01b-46d6-bd16-f66b3e720e19.png)
+
+![image](https://user-images.githubusercontent.com/66360846/195597022-9435ebd0-a3f6-4758-9065-dc3494d91397.png)
+
+![image](https://user-images.githubusercontent.com/66360846/195597091-c99b4dd7-ed51-4489-a797-a3a6a13cb3d3.png)
+
+![image](https://user-images.githubusercontent.com/66360846/195597137-44a47720-6356-41b4-a4d5-8c2a924da4a6.png)
+
+![image](https://user-images.githubusercontent.com/66360846/195597215-f3a627f7-a110-441c-8370-4478da3db87c.png)
+
+![image](https://user-images.githubusercontent.com/66360846/195597324-6a23a40b-ff9a-45e6-aeea-628d9e8f0a47.png)
+
+## Titanic.csv :
+![image](https://user-images.githubusercontent.com/66360846/195597358-07e6b926-39d1-44b2-81d6-087777fbc203.png)
+
+![image](https://user-images.githubusercontent.com/66360846/195597403-862ae4a8-5805-4a32-835f-0fa608f1ab9c.png)
+
+![image](https://user-images.githubusercontent.com/66360846/195597435-7c927495-ce46-46b3-855f-6efac1a1cb4d.png)
+
+![image](https://user-images.githubusercontent.com/66360846/195597455-00c4c28e-aa71-4e34-8502-749129782286.png)
+
+![image](https://user-images.githubusercontent.com/66360846/195597487-15f3498b-3c98-47e8-9de4-55b2e2ef8880.png)
+
+![image](https://user-images.githubusercontent.com/66360846/195597511-65816246-3c7b-4b05-8275-ba038894ede4.png)
+
+![image](https://user-images.githubusercontent.com/66360846/195597536-01f441bd-df8f-4921-9c69-a7545bbb4678.png)
+
+![image](https://user-images.githubusercontent.com/66360846/195597567-e1c836fa-da38-497d-9064-53b7d4f126bd.png)
+
+![image](https://user-images.githubusercontent.com/66360846/195597588-db649710-17be-425e-9321-35cf4a9ea81b.png)
+
+![image](https://user-images.githubusercontent.com/66360846/195597611-36160d7e-b4bd-4893-a7a8-d26bf4ede2fa.png)
+
+![image](https://user-images.githubusercontent.com/66360846/195598122-1041ab68-216d-45a6-adc2-373ea6a1da60.png)
 
 ## RESULT:
-Hence Feature Generation process and Feature Scaling process is applied to the given data frames sucessfully.
+Feature Generation process and Feature Scaling process is applied to the given data frames sucessfully.
